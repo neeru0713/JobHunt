@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "LinkedIn one page Connect",
+  "version": "1.0",
+  "description": "Send connect requests on LinkedIn",
+  "permissions": ["https://www.linkedin.com/*"],
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "LinkedIn Connect",
+    "default_popup": "popup.html"
+  }
+}
