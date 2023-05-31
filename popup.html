@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,9 +10,36 @@
     </head>
     <body>
         <h1> Linkedin AutoConnect </h1>
-        <input type="text" placeholder="Input company name">
-        <input type="text" placeholder="Input number of people">
-        <button>Submit</button> 
-        <script src="" async defer></script>
+        <input type="text" class="company" placeholder="Input company name">
+        <input type="text" class="people" placeholder="Input number of people">
+        <button class="submit">Submit</button> 
+        <script type="module" src="./content.js"></script>
     </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Theme Animation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="input-field">
+            <label for="company">Company:</label>
+            <input type="text" id="companyName" name="company" required>
+        </div>
+        <div class="input-field">
+            <label for="employees">Number of Employees:</label>
+            <input type="text" id="numEmp" name="employees" required>
+        </div>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+<script src="popup.js"></script>
 </html>
+
+
+
+
+
+
+
