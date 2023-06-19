@@ -24,7 +24,7 @@ async function jobhuntStart() {
     await clickElements(connectButtons);
     await sleep(1000)
     alert("Thank you")
-
+     
 }
 
 async function clickElements(connectButtons) {
@@ -52,7 +52,6 @@ async function clickElements(connectButtons) {
         var element = document.querySelector('footer'); // You can change this to target a specific element if needed
         element.scrollIntoView({ behavior: 'smooth', block: 'end' });
         await sleep(1500)
-
         var nextBtn = document.getElementsByClassName('artdeco-pagination__button--next');
         console.log(nextBtn[0])
         await nextBtn[0].click()
@@ -60,6 +59,7 @@ async function clickElements(connectButtons) {
         let connectButtons = await getConnectButtons()
         await clickElements(connectButtons);
     }
+
 }
 
 async function searchCompanyName(){
